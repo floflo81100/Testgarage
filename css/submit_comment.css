@@ -1,0 +1,77 @@
+/* CSS spécifique pour la soumission de commentaire */
+
+.comment-submission-form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.comment-submission-form h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.comment-submission-form h3 {
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical; /* Permet le redimensionnement vertical seulement */
+}
+
+select {
+    appearance: none; /* Masque le style par défaut de l'élément select */
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.error-message {
+    color: #ff0000;
+    margin-bottom: 10px;
+}
+
+.success-message {
+    color: #008000;
+    margin-bottom: 10px;
+}

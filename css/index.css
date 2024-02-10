@@ -1,0 +1,284 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+/* Styles pour la section de bienvenue */
+.welcome-section {
+  position: relative;
+  width: 100%; /* Largeur complète */
+  height: 100vh; /* Hauteur de l'écran */
+  display: flex;
+  justify-content: center; /* Centre le contenu horizontalement */
+  align-items: center; /* Centre le contenu verticalement */
+  text-align: center; /* Centre le texte */
+  color: white; /* Texte en blanc pour une meilleure visibilité */
+  overflow: hidden; /* Cache les débordements de la vidéo de fond */
+}
+
+/* Styles pour la vidéo de fond */
+.welcome-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%; /* La vidéo prend toute la largeur de la section */
+  height: 100%; /* La vidéo prend toute la hauteur de la section */
+  object-fit: cover; /* Garantit que la vidéo couvre l'espace sans déformer son ratio */
+  z-index: -1; /* La vidéo reste en arrière-plan */
+}
+
+.welcome-text {
+    position: relative;
+    z-index: 2; /* Assure que le texte reste au-dessus de la vidéo */
+    max-width: 900px; /* Limite la largeur du texte pour la lisibilité */
+    padding: 50px;
+    background: rgba(0, 0, 0, 0.5); /* Fond semi-transparent pour la lisibilité du texte */
+    border-radius: 15px; /* Bords arrondis pour le bloc de texte */
+}
+
+.welcome-text h2 {
+    font-size: 3rem; /* Taille de police pour le titre */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.welcome-text p {
+    font-size: 1.2rem; /* Taille de police pour le paragraphe */
+    margin-bottom: 40px;
+}
+
+/* Boutons de la section de bienvenue */
+.welcome-text .btn {
+    margin: 0.5rem;
+    padding: 1rem 2rem; /* Taille plus grande pour une meilleure ergonomie */
+    font-size: 1rem; /* Taille de la police des boutons */
+}
+
+@media (max-width: 768px) {
+  .welcome-text {
+    padding: 20px;
+  }
+
+  .welcome-text h1 {
+      font-size: 2rem; /* Taille de police plus petite pour les petits écrans */
+  }
+
+  .welcome-text p {
+      font-size: 1rem; /* Taille de police plus petite pour les petits écrans */
+  }
+
+  .welcome-text .btn {
+      padding: 0.5rem 1rem; /* Padding plus petit pour les petits écrans */
+      font-size: 1rem; /* Taille de police des boutons plus petite pour les petits écrans */
+  }
+}
+
+/* Styles pour la section à propos du garage */
+.about-garage {
+  background-image: url('../img/about_garage.jpg'); /* Ajoutez le chemin de votre image */
+  background-size: cover; /* Redimensionne l'image pour couvrir toute la section */
+  background-position: center 30%; /* Centre l'image horizontalement et aligne le haut de l'image avec le haut de la section */
+  color: #fdc70a; /* Texte en couleur jaune pour un contraste fort */
+  padding: 2rem; /* Espace généreux autour du texte réduit */
+  text-align: center; /* Texte centré */
+  border-radius: 0.5rem; /* Coins légèrement arrondis pour un style moderne */
+  margin: 1rem 0; /* Ajout de marge autour de la section réduit */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre subtile pour un effet de profondeur */
+}
+
+.about-garage p {
+  font-size: 1.5em; /* Taille de police ajustée pour une meilleure lisibilité */
+  line-height: 1.6; /* Hauteur de ligne pour améliorer la lisibilité du paragraphe */
+  max-width: 800px; /* Largeur maximale pour la lisibilité sur les grands écrans */
+  margin: auto; /* Centrage du paragraphe */
+}
+
+/* Pour rendre le texte plus visible */
+.about-garage h2, .about-garage p {
+  opacity: 1; /* Opacité totale pour le texte */
+}
+
+.why-choose-us {
+  padding: 2rem 0; /* Ajustez le padding selon vos besoins */
+}
+
+.why-choose-us .container {
+  background-color: 	#DCDCDC; /* Fond blanc pour le conteneur */
+  padding: 2rem; /* Espace interne pour le conteneur */
+  border-radius: 0.5rem; /* Coins arrondis pour le conteneur */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Ombre pour ajouter de la profondeur */
+}
+
+.why-choose-us h2 {
+  color: #333; /* Couleur de titre plus foncée pour la lisibilité */
+  margin-bottom: 1rem; /* Espace sous le titre */
+  font-size: 2.5rem; /* Taille de la police plus grande pour le titre */
+}
+
+.why-choose-us p {
+  font-size: 1.25rem; /* Taille de la police plus grande pour les paragraphes */
+  text-align: justify;
+  text-justify: inter-word;
+  margin-bottom: 1rem; /* Espace entre les paragraphes */
+}
+
+.why-choose-us .col-md-6 img {
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); /* Ombre autour de l'image */
+}
+
+/* Ajustements pour les écrans plus petits */
+@media (max-width: 768px) {
+  .why-choose-us .container {
+      padding: 1rem; /* Moins d'espace interne pour les écrans plus petits */
+  }
+  .why-choose-us h2 {
+      font-size: 2rem; /* Taille de la police réduite pour le titre sur les écrans plus petits */
+  }
+  .why-choose-us p {
+      font-size: 1rem; /* Taille de la police réduite pour les paragraphes sur les écrans plus petits */
+  }
+}
+
+
+/* Styles pour les sections de contenu principal */
+.services,
+.why-choose-us,
+.contact-us {
+  padding: 1rem; /* Padding réduit pour un meilleur espace */
+  margin-bottom: 1rem; /* Marge inférieure réduite */
+  border-radius: 0.5rem; /* Coins plus arrondis */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre subtile pour la profondeur */
+}
+
+/* Styles pour les sous-titres */
+h3 {
+  color: #000; /* Texte noir */
+  font-size: 1.5em;
+  margin-top: 0.5rem; /* Marge supérieure ajustée */
+  margin-bottom: 0.5rem; /* Marge inférieure ajustée */
+}
+
+/* Style pour les listes dans les sections */
+ul {
+  list-style-type: none; /* Enlever les puces */
+  padding: 0;
+}
+
+/* Styles pour la section des Services Offerts */
+.services {
+  background-color: #f9f9f9; /* Fond gris clair */
+  padding: 2rem; /* Espace autour du contenu */
+  border-radius: 0.5rem; /* Coins arrondis */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre subtile pour la profondeur */
+  margin-bottom: 2rem; /* Marge inférieure augmentée */
+}
+
+/* Style pour le titre */
+.services h3 {
+  color: #333; /* Couleur de titre plus foncée */
+  font-size: 1.8em; /* Taille de police plus grande */
+  margin-bottom: 1rem; /* Marge inférieure ajustée */
+}
+
+/* Style pour la liste des services */
+.services ul {
+  list-style-type: none; /* Enlever les puces */
+  padding: 0; /* Supprimer le padding par défaut */
+}
+
+/* Style pour chaque service */
+.services li {
+  margin-bottom: 1.5rem; /* Marge inférieure entre chaque service */
+}
+
+/* Style pour les titres de service */
+.services li strong {
+  color: #dc3545; /* Couleur rouge pour les titres de service */
+  font-weight: bold; /* Gras pour les titres de service */
+}
+
+/* Style pour le texte des services */
+.services li p {
+  color: #666; /* Couleur de texte plus sombre */
+  font-size: 1.2em; /* Taille de police légèrement plus grande */
+  line-height: 1.6; /* Hauteur de ligne pour une meilleure lisibilité */
+}
+
+/* Styles pour le carrousel */
+.carousel-control-prev, .carousel-control-next {
+  position: absolute;
+  top: 50%; /* Position au milieu verticalement */
+  transform: translateY(-50%); /* Centrer les boutons */
+  width: 35px; /* Taille réduite pour l'icône */
+  height: 35px; /* Taille réduite pour l'icône */
+  background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+  border-radius: 50%; /* Cercles complets */
+  padding: 0; /* Pas de padding */
+  align-items: center; /* Centrer le contenu des boutons */
+  justify-content: center; /* Centrer le contenu des boutons */
+}
+
+/* Personnalisation des icônes des contrôles de navigation */
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-image: none; /* Supprimer l'image de fond par défaut */
+  display: inline-block; /* Assurer que l'icône est correctement affichée */
+  width: 100%; /* Utiliser toute la largeur disponible */
+  height: 100%; /* Utiliser toute la hauteur disponible */
+  text-align: center; /* Assurer que l'icône est centrée */
+  line-height: 35px; /* Aligner verticalement le texte de l'icône */
+}
+
+/* Utilisation de Font Awesome pour les icônes si disponible */
+.carousel-control-prev-icon::before, .carousel-control-next-icon::before {
+  content: ''; /* Retirer le contenu par défaut */
+  font-family: "Font Awesome 5 Free"; /* Changer la famille de police si vous utilisez Font Awesome */
+  font-weight: 900; /* Font Awesome nécessite un poids de police de 900 pour les icônes solides */
+}
+
+/* Styles spécifiques pour les icônes de Font Awesome */
+.carousel-control-prev-icon::before {
+  content: '\f053'; /* Code Unicode pour la flèche gauche de Font Awesome */
+}
+
+.carousel-control-next-icon::before {
+  content: '\f054'; /* Code Unicode pour la flèche droite de Font Awesome */
+}
+
+/* Assurer la visibilité des flèches sur les images claires */
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  color: #fff; /* Couleur blanche pour les icônes */
+}
+
+
+/* Styles pour la section des employés */
+.employees-section {
+  text-align: center; /* Texte centré */
+}
+
+.employees {
+  display: flex; /* Affichage en ligne */
+  justify-content: center; /* Centrer horizontalement */
+  flex-wrap: wrap; /* Permettre le retour à la ligne */
+}
+
+.employee {
+  margin: 0 1rem; /* Marge horizontale */
+}
+
+.employee img {
+  width: 150px; /* Largeur de l'image */
+  border-radius: 50%; /* Coins arrondis */
+  margin-bottom: 0.5rem; /* Marge inférieure */
+}
+
+.employee p {
+  font-size: 1.2em; /* Taille de police ajustée */
+}
+
+/* Styles pour la section Contactez-Nous */
+.contact-us {
+  text-align: center; /* Texte centré */
+  margin-bottom: 5rem; /* Marge inférieure ajustée */
+}

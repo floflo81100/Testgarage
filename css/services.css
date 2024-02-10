@@ -1,0 +1,72 @@
+/* Styles pour la section de services */
+.services-presentation {
+    background-color: #f8f9fa; /* Couleur de fond de la section */
+    padding: 2rem; /* Espace autour du contenu */
+    border-radius: 8px; /* Coins arrondis pour un look moderne */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre subtile pour la profondeur */
+    max-width: 800px; /* Largeur maximale pour une meilleure lisibilité */
+    margin: auto; /* Centrer la section dans la page */
+  }
+  
+  /* Styles pour les titres dans la section services */
+.services-presentation h2 {
+    text-align: center; /* Centrer le titre */
+    color: #333; /* Couleur du titre */
+    margin-bottom: 1rem; /* Espace après le titre */
+  }
+  
+.services-presentation h3 {
+    color: #0056b3; /* Couleur des sous-titres */
+    margin-top: 1rem; /* Espace avant chaque sous-titre */
+  }
+  
+  /* Styles pour les paragraphes dans la section services */
+.services-presentation p {
+    font-size: 16px; /* Taille de la police */
+    line-height: 1.6; /* Hauteur de ligne */
+    color: #666; /* Couleur du texte */
+    margin-bottom: 0.5rem; /* Espace après chaque paragraphe */
+  }
+  
+  /* Liste stylisée pour les services */
+.services-presentation ul {
+    list-style: none; /* Enlever les puces */
+    padding: 0; /* Enlever le padding par défaut */
+  }
+  
+.services-presentation li {
+    margin-bottom: 1rem; /* Espace entre les éléments de la liste */
+    padding-left: 1.5rem; /* Espace à gauche pour l'icône */
+    position: relative; /* Pour positionner l'icône */
+  }
+  
+  /* Icône pour les éléments de liste */
+.services-presentation li:before {
+    content: "✔"; /* Caractère pour l'icône */
+    color: #0056b3; /* Couleur de l'icône */
+    position: absolute; /* Position absolue par rapport à l'élément de liste */
+    left: 0; /* Aligner à gauche */
+    top: 0; /* Aligner en haut */
+  }
+  
+.services-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.service-icon {
+    text-align: center;
+    margin: 20px;
+}
+
+.service-icon img {
+    width: 100px; /* Ajustez la taille selon vos besoins */
+    height: auto;
+}
+
+.service-icon p {
+    margin-top: 10px;
+}
+

@@ -1,0 +1,220 @@
+body {
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700; /* Pour des titres audacieux */
+  }
+  
+  p,
+  li,
+  a {
+    font-weight: 400;
+  }
+
+
+.navbar{
+  padding: 1 rem 0;     
+}
+
+.navbar-nav {
+  flex-grow: 1; /* Permet aux liens de navigation de remplir l'espace */
+  justify-content: center; /* Centre les liens de navigation */
+}
+
+.navbar-brand {
+  flex-grow: 0; /* Empêche le logo de remplir l'espace inutilement */
+}
+
+
+
+/* Styles personnalisés pour l'en-tête */
+.navbar-dark {
+    text-align: center;
+    background-color: #000 !important; /* Assure un fond totalement noir */
+}
+
+/* Style des liens de navigation */
+.navbar-dark .navbar-nav .nav-link {
+    margin-right: 40px; /* Espacement à droite de chaque lien */
+    font-size: 1.2em;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    color: #fdc70a; /* Couleur des liens de navigation */
+    transition: color 0.3s ease-in-out; /* Animation douce de la couleur */
+}
+
+/* Ajuste le dernier élément pour éviter un espace supplémentaire à la fin */
+.navbar-nav .nav-item:last-child .nav-link {
+  margin-right: 0;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #ffffff; /* Couleur au survol */
+    text-decoration: none; /* Optionnel : enlève le soulignement au survol */
+}
+
+/* Style pour le logo dans la barre de navigation */
+.navbar-brand img {
+    height: 250px; /* Hauteur ajustée pour une meilleure intégration */
+    width: auto;
+}
+
+@media (max-width: 768px) {
+    .navbar-brand img {
+      height: 150px; /* Hauteur réduite pour les appareils mobiles */
+    }
+}
+  
+.footer {
+  background-color: #000; /* Fond noir pour le footer */
+  color: #fff; /* Texte en blanc */
+  padding: 2rem 0;
+}
+
+.footer-contact,
+.footer-hours,
+.footer-links {
+  margin-bottom: 1rem;
+}
+
+.footer h3,
+.footer h4 {
+  color: #fdc70a; /* Couleur jaune pour les titres */
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer li {
+  padding: 0.25rem 0;
+}
+
+.footer li a {
+  color: #fdc70a; /* Couleur jaune pour les liens */
+  text-decoration: none;
+}
+
+.footer li a:hover {
+  text-decoration: underline;
+}
+
+.footer .text-center p {
+  margin-top: 1rem;
+  color: #fff;
+}
+
+.footer-logo {
+  max-width: 100px; /* Ajuste la largeur maximale du logo */
+  height: auto; /* Garde le ratio hauteur/largeur */
+  display: block; /* Affiche le logo comme un bloc */
+  margin: -60px auto 1rem auto; /* Centre le logo horizontalement et ajoute de l'espace en dessous */
+}
+
+/* Style pour le footer sur tous les appareils */
+.footer-contact {
+  margin-bottom: 1rem; /* Espace en dessous des informations de contact */
+}
+
+/* Style pour le container de l'iframe de la map */
+.map-iframe-container {
+  margin-top: 1rem; /* Espace au-dessus de la carte */
+}
+
+/* Style de l'iframe pour mobile */
+@media (max-width: 768px) {
+  .map-iframe-container iframe {
+      width: 100%; /* Largeur complète sur les appareils mobiles */
+      height: 200px; /* Hauteur fixe sur les appareils mobiles */
+  }
+}
+
+
+/* Assurez-vous que la classe .container est centrée et a une largeur maximale si nécessaire */
+.footer .container {
+  max-width: 1140px; /* ou la largeur que vous préférez */
+  margin: auto; /* Centre le conteneur */
+}
+
+.footer-logo {
+  max-width: 250px; /* Assurez-vous que la largeur soit la même que la hauteur pour conserver le ratio */
+  object-fit: contain; /* Ajuste l'image dans le cadre sans la déformer */
+  margin-bottom: -50px; /* Négatif pour soulever le logo par rapport à son conteneur */
+}
+
+
+/* Les colonnes devraient automatiquement être centrées si elles utilisent Bootstrap correctement */
+.footer-contact,
+.footer-hours,
+.footer-links {
+  text-align: center; /* Centre le texte dans chaque colonne */
+}
+
+/* Si vous souhaitez que les colonnes soient également centrées verticalement */
+.footer.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+}
+
+.map-iframe-container iframe {
+  width: 100%; /* Permet à la carte de prendre toute la largeur du conteneur */
+  height: 200px; /* Hauteur fixe pour la carte */
+  border: none; /* Retire la bordure si nécessaire */
+}
+
+/* Centrage des liens sociaux */
+.footer-social-links {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* Styles des liens sociaux */
+.footer-social-links .social-link {
+  display: inline-block;
+  margin: 0 10px;
+  color: #fdc70a; /* Couleur jaune pour les icônes */
+  font-size: 1.5rem; /* Taille des icônes */
+  transition: color 0.3s ease;
+}
+
+.footer-social-links .social-link:hover {
+  color: #fff; /* Couleur blanche au survol */
+}
+
+/* Styles pour le bas du pied de page */
+.footer-bottom {
+  background: #333; /* Fond sombre pour le bas du pied de page */
+  color: #fff; /* Texte blanc */
+  padding: 1rem 0; /* Espace autour du texte */
+  text-align: center; /* Centre le texte */
+}
+
+/* Assurez-vous que les droits d'auteur sont centrés */
+.footer-bottom p {
+  margin: 0; /* Retire la marge par défaut */
+}
+
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none; /* Le bouton est caché par défaut */
+  z-index: 100; /* S'assurer que le bouton est au-dessus des autres éléments */
+  background: #000;
+  border-radius: 30px;
+}
+
+.back-to-top .fa-arrow-up{
+  color: #fdc70a;
+}

@@ -1,0 +1,68 @@
+/* vehicles.css */
+
+/* Styles spécifiques pour la section des véhicules */
+.vehicles-section {
+    padding: 20px;
+    background-color: #f4f4f4; /* Couleur de fond légère */
+}
+
+.vehicles-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espace entre les cartes de véhicules */
+}
+
+.vehicle-card {
+    background-color: #fff; /* Blanc */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    width: calc(33.333% - 20px); /* Trois cartes par ligne */
+}
+
+/* Ajustement pour aligner les images des véhicules et définir une taille maximale */
+.vehicle-card img {
+    width: 200px; /* L'image prend toute la largeur de la carte */
+    height: 200px;
+    border-radius: 5px;
+    object-fit: cover; /* Ajustement pour conserver le ratio d'aspect */
+    align-items: center;
+}
+
+.vehicle-card h3 {
+    margin-top: 10px;
+}
+
+.vehicle-card p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.vehicle-card .btn-primary {
+    background-color: #000; /* Noir */
+    color: #fdc70a; /* Jaune spécifique */
+    text-align: center;
+    display: block;
+    padding: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.vehicle-card .btn-primary:hover {
+    background-color: #fdc70a; /* Jaune spécifique */
+    color: #000; /* Noir */
+}
+
+/* Responsive Design pour les cartes de véhicules */
+@media (max-width: 1200px) {
+    .vehicle-card {
+        width: calc(50% - 20px); /* Deux cartes par ligne */
+    }
+}
+
+@media (max-width: 768px) {
+    .vehicle-card {
+        width: 100%; /* Une carte par ligne */
+    }
+}

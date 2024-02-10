@@ -1,0 +1,76 @@
+/* Styles généraux pour la page de détails du véhicule */
+.vehicle-details-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #F7F7F7; /* Couleur de fond légère */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Styles pour les détails principaux */
+.primary-details h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.primary-details p {
+    font-size: 1.2em;
+    margin: 10px 0;
+    font-weight: bold;
+    color: #444;
+    text-align: center;
+}
+
+/* Styles pour les détails secondaires et le tableau */
+.secondary-details {
+    margin-top: 30px;
+}
+
+.secondary-details h2 {
+    text-align: center;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.secondary-details table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.secondary-details th, .secondary-details td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.secondary-details th {
+    background-color: #EEE; /* Fond des entêtes de tableau */
+    color: #333;
+    font-weight: bold;
+}
+
+.secondary-details td {
+    background-color: #FFF; /* Fond des cellules */
+}
+
+/* Styles pour le bouton de retour */
+.back-button {
+    display: block;
+    background-color: #000;
+    color: #fdc70a;
+    text-align: center;
+    width: max-content;
+    padding: 10px 20px;
+    margin: 30px auto;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #fdc70a;
+    color: #000;
+}
